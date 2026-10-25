@@ -7,10 +7,10 @@
 static grumble_level_t grumble_level = GRUMBLE_LEVEL_INFO;
 
 static const char* plain[] = {
-  "[FATAL]",
-  "[ERROR]",
-  "[WARN ]",
-  "[INFO ]"
+  "[FATAL] ",
+  "[ERROR] ",
+  "[WARN ] ",
+  "[INFO ] "
 };
 
 static const char* colored[] = {
