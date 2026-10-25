@@ -1,0 +1,17 @@
+name: build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: configure cmake
+        run: cmake -S . -B build
+
+      - name: build library
+        run: cmake --build build
